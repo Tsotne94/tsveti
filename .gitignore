@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+._*
+__MACOSX/
+
+# editors
+.vscode/
+.idea/
+
+# tooling
+node_modules/
+.wrangler/
+*.log

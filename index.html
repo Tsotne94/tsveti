@@ -1,0 +1,1190 @@
+<!doctype html>
+<html lang="ka">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CAFE TSVETI</title>
+<meta name="description" content="კაფე წვეთის მენიუ — დესერტი, ყავა, ცივი სასმელი, კოქტეილი და ტერასა. ყოველდღე 09:00 – 23:00.">
+<meta name="theme-color" content="#FDFBF7">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CAFÉ TSVETI · კაფე წვეთი">
+<meta property="og:description" content="მენიუ ქართულად, ინგლისურად და რუსულად. ყოველდღე 09:00 – 23:00.">
+<!-- The default Cloudflare Pages domain. If you attach a custom domain,
+     find and replace https://cafe-tsveti.pages.dev with it in this head. -->
+<link rel="canonical" href="https://cafe-tsveti.pages.dev/">
+<meta property="og:url" content="https://cafe-tsveti.pages.dev/">
+<meta property="og:site_name" content="CAFÉ TSVETI">
+<meta property="og:image" content="https://cafe-tsveti.pages.dev/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="CAFÉ TSVETI">
+<meta property="og:locale" content="ka_GE">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- What Google reads. Add "telephone" and "address" here once they are known. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Café Tsveti",
+  "alternateName": ["კაფე წვეთი", "Кафе Цвети"],
+  "url": "https://cafe-tsveti.pages.dev/",
+  "image": "https://cafe-tsveti.pages.dev/og-image.png",
+  "hasMenu": "https://cafe-tsveti.pages.dev/",
+  "servesCuisine": ["Coffee", "Desserts"],
+  "priceRange": "3.00-30.00 GEL",
+  "currenciesAccepted": "GEL",
+  "sameAs": ["https://www.instagram.com/cafe.tsveti/"],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "09:00",
+    "closes": "23:00"
+  }]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Marcellus&family=Noto+Sans+Georgian:wght@400;500&family=Noto+Serif+Georgian:wght@400;500&display=swap">
+
+<style>
+/* ==========================================================
+   CAFE TSVETI — one sheet of off-white paper.
+   No boxes, no shadows, no fills. Hairlines and space.
+
+   Three languages. Georgian is set in Noto Serif Georgian,
+   Latin and Cyrillic in EB Garamond, so switching language
+   changes the script without changing the texture.
+   ========================================================== */
+:root{
+  color-scheme: light;
+
+  --paper:#FDFBF7;
+  --cream:#F7F4EF;
+
+  --ink:#3A2E2B;
+  --ink-soft:#6F6058;
+  --ink-faint:#A89890;
+  --ink-sub:#7E6E65;
+
+  --gold:#C5A880;
+  --gold-deep:#8E7044;
+  --gold-tint:rgba(197,168,128,.15);
+  --sage:#4E6E5D;
+
+  --rule:rgba(58,46,43,.11);
+  --rule-2:rgba(58,46,43,.16);
+  --leader:rgba(58,46,43,.19);
+  --logo-rule:rgba(58,46,43,.5);
+
+  --wordmark:"Marcellus", Georgia, "Times New Roman", serif;
+  --geo-serif:"Noto Serif Georgian", Georgia, "Times New Roman", serif;
+  --geo-sans:"Noto Sans Georgian", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --eur-serif:"EB Garamond", "Iowan Old Style", Georgia, serif;
+
+  --gutter:clamp(20px, 5.5vw, 48px);
+  --measure:1040px;
+}
+
+*,*::before,*::after{ box-sizing:border-box }
+[hidden]{ display:none !important }
+
+html{
+  -webkit-text-size-adjust:100%;
+  background:var(--paper);
+  overflow-x:hidden;
+  overflow-x:clip;
+}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--geo-sans);
+  font-size:16px;
+  font-weight:400;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
+}
+h1,h2,h3,p{ margin:0 }
+button{ font:inherit; color:inherit }
+a{ color:inherit }
+
+:focus-visible{
+  outline:1.5px solid var(--gold-deep);
+  outline-offset:4px;
+}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms !important;
+    transition-duration:.01ms !important;
+    scroll-behavior:auto !important;
+  }
+}
+
+.wrap{
+  width:100%;
+  max-width:var(--measure);
+  margin-inline:auto;
+  padding-inline:var(--gutter);
+}
+
+/* ---------------- language switch ---------------- */
+.topbar-inner{
+  display:flex; justify-content:flex-end; align-items:center;
+  padding-block:10px;
+}
+.langs{ display:inline-flex; align-items:center }
+.lang{
+  border:0; background:transparent;
+  padding:9px 13px;
+  min-height:42px;
+  font-size:13px;
+  line-height:1;
+  color:var(--ink-faint);
+  cursor:pointer;
+  white-space:nowrap;
+  -webkit-tap-highlight-color:transparent;
+  transition:color .2s ease;
+}
+.lang:hover{ color:var(--ink) }
+.lang[aria-pressed="true"]{
+  color:var(--ink);
+  text-decoration:underline;
+  text-decoration-color:var(--gold);
+  text-decoration-thickness:1px;
+  text-underline-offset:7px;
+}
+.lang-div{ width:1px; height:12px; background:var(--rule-2); flex:0 0 auto }
+
+/* ---------------- hero ---------------- */
+.hero{
+  text-align:center;
+  padding-block:clamp(26px, 7vw, 68px) clamp(30px, 6vw, 46px);
+  padding-inline:var(--gutter);
+}
+/* the house lockup: cup, rules, CAFE TSVETI, dot */
+.logo{
+  display:inline-flex; flex-direction:column; align-items:stretch;
+  width:max-content; max-width:100%;
+  color:var(--ink);
+}
+.logo-cup{
+  height:clamp(30px, 8vw, 40px);
+  width:auto;
+  align-self:center;
+  color:var(--ink);
+}
+.logo-caf{
+  display:flex; align-items:center; gap:clamp(10px, 2.4vw, 16px);
+  margin-top:clamp(12px, 2.6vw, 18px);
+}
+.logo-caf i{ flex:1 1 auto; height:1px; background:var(--logo-rule) }
+.logo-caf span{
+  font-family:var(--wordmark);
+  font-size:clamp(12px, 3.2vw, 15px);
+  letter-spacing:.3em;
+  text-indent:.3em;
+  line-height:1;
+  white-space:nowrap;
+}
+.logo-name{
+  font-family:var(--wordmark);
+  font-weight:400;
+  font-size:clamp(32px, 12vw, 56px);
+  letter-spacing:.18em;
+  text-indent:.18em;
+  line-height:1.12;
+  margin-top:clamp(4px, 1vw, 8px);
+  text-align:center;
+  white-space:nowrap;
+}
+.logo-rule{ height:1px; background:var(--logo-rule); margin-top:clamp(8px, 1.6vw, 12px) }
+.logo-dot{
+  width:4px; height:4px; border-radius:50%;
+  background:var(--ink);
+  margin:clamp(11px, 2.2vw, 15px) auto 0;
+}
+.wordmark-ka{
+  font-family:var(--geo-serif);
+  font-weight:400;
+  font-size:clamp(10.5px, 2.8vw, 13px);
+  letter-spacing:.3em;
+  text-indent:.3em;
+  color:var(--gold-deep);
+  margin-top:clamp(16px, 3vw, 22px);
+  max-width:100%;
+}
+.tagline{
+  margin-top:clamp(22px, 4vw, 30px);
+  font-size:clamp(14px, 3.5vw, 15.5px);
+  color:var(--ink-soft);
+}
+.status{
+  display:inline-flex; align-items:center; justify-content:center;
+  flex-wrap:wrap; gap:4px 9px;
+  margin-top:12px;
+  font-size:13.5px;
+  color:var(--ink-soft);
+  max-width:100%;
+}
+.status .dot{
+  width:6px; height:6px; border-radius:50%;
+  background:var(--sage); flex:0 0 auto;
+}
+.status.is-shut .dot{ background:var(--ink-faint) }
+
+/* ---------------- category bar ---------------- */
+.bar{
+  position:sticky; top:0; z-index:30;
+  background:rgba(253,251,247,.92);
+  -webkit-backdrop-filter:blur(14px);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid transparent;
+  transition:border-color .25s ease;
+}
+.bar.is-stuck{ border-bottom-color:var(--rule) }
+
+.pills-shell{ position:relative }
+.pills-shell::before,
+.pills-shell::after{
+  content:""; position:absolute; top:0; bottom:0; width:28px;
+  pointer-events:none; z-index:2; opacity:0; transition:opacity .25s ease;
+}
+.pills-shell::before{ left:0;  background:linear-gradient(90deg, var(--paper), rgba(253,251,247,0)) }
+.pills-shell::after{  right:0; background:linear-gradient(270deg, var(--paper), rgba(253,251,247,0)) }
+.pills-shell.fade-l::before{ opacity:1 }
+.pills-shell.fade-r::after{  opacity:1 }
+
+.pills{
+  display:flex; gap:8px;
+  overflow-x:auto; overscroll-behavior-x:contain;
+  scrollbar-width:none; -ms-overflow-style:none;
+  -webkit-overflow-scrolling:touch;
+  padding-block:13px;
+}
+.pills::-webkit-scrollbar{ display:none }
+@media (min-width:980px){
+  .pills{ justify-content:center; flex-wrap:wrap; overflow:visible }
+  .pills-shell::before,.pills-shell::after{ display:none }
+}
+
+.pill{
+  flex:0 0 auto;
+  min-height:37px;
+  padding:0 17px;
+  border:1px solid var(--rule-2);
+  border-radius:999px;
+  background:transparent;
+  color:var(--ink-soft);
+  font-size:13.5px;
+  line-height:1;
+  white-space:nowrap;
+  cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+  transition:background-color .2s ease, border-color .2s ease, color .2s ease;
+}
+.pill:hover{ border-color:var(--gold); color:var(--ink) }
+.pill[aria-pressed="true"]{
+  background:var(--gold-tint);
+  border-color:var(--gold);
+  color:var(--ink);
+  font-weight:500;
+}
+
+/* ---------------- script-aware type ----------------
+   .t-* is a primary line, .s-* is the secondary line under it.
+   JS swaps the class when the language changes.                */
+.t-geo{ font-family:var(--geo-serif) }
+.t-eur{ font-family:var(--eur-serif) }
+.s-geo{ font-family:var(--geo-sans) }
+.s-eur{ font-family:var(--eur-serif); font-style:italic; text-transform:lowercase }
+
+/* ---------------- the menu ---------------- */
+.menu{ padding-block:clamp(10px, 2vw, 18px) clamp(50px, 8vw, 86px) }
+
+.cat{ padding-top:clamp(40px, 7vw, 72px) }
+.cat:first-child{ padding-top:clamp(26px, 4vw, 42px) }
+
+.cat-head{ display:flex; align-items:baseline; gap:clamp(16px, 3vw, 28px) }
+.cat-head h2{
+  font-weight:500;
+  line-height:1.3;
+  letter-spacing:-.004em;
+  color:var(--ink);
+}
+.cat-head h2.t-geo{ font-size:clamp(19px, 5vw, 26px) }
+.cat-head h2.t-eur{ font-size:clamp(20px, 5.4vw, 28px) }
+.cat-head .sub{ line-height:1.35; color:var(--ink-sub); margin-top:2px }
+.cat-head .sub.s-geo{ font-size:clamp(12.5px, 3.2vw, 14px) }
+.cat-head .sub.s-eur{ font-size:clamp(13px, 3.3vw, 15px) }
+.cat-rule{
+  flex:1 1 auto;
+  height:1px;
+  min-width:20px;
+  background:var(--gold);
+  opacity:.8;
+  transform:translateY(-7px);
+}
+
+.items{
+  display:grid;
+  grid-template-columns:1fr;
+  padding-top:clamp(12px, 2vw, 20px);
+}
+@media (min-width:780px){
+  .items[data-cols="2"]{
+    grid-template-columns:1fr 1fr;
+    column-gap:clamp(40px, 5.5vw, 76px);
+    /* the fold line of a printed menu card */
+    background:linear-gradient(var(--rule), var(--rule)) 50% 0 / 1px 100% no-repeat;
+  }
+  .items[data-cols="1"]{ max-width:600px }
+}
+
+.item{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:baseline;
+  column-gap:clamp(14px, 2.4vw, 22px);
+  padding-block:14px 15px;
+  background-image:repeating-linear-gradient(90deg, var(--leader) 0 1.5px, transparent 1.5px 5px);
+  background-size:100% 1px;
+  background-position:0 100%;
+  background-repeat:no-repeat;
+  transition:background-image .2s ease;
+}
+@media (hover:hover){
+  .item:hover{
+    background-image:repeating-linear-gradient(90deg, var(--gold) 0 1.5px, transparent 1.5px 5px);
+  }
+}
+.item-title{
+  grid-column:1;
+  font-weight:400;
+  line-height:1.5;
+  color:var(--ink);
+  overflow-wrap:anywhere;
+}
+.item-title.t-geo{ font-size:clamp(15px, 3.9vw, 16.5px) }
+.item-title.t-eur{ font-size:clamp(16px, 4.2vw, 18px) }
+.item-sub{
+  grid-column:1;
+  line-height:1.45;
+  color:var(--ink-sub);
+  margin-top:3px;
+  overflow-wrap:anywhere;
+}
+.item-sub.s-geo{ font-size:clamp(12.5px, 3.2vw, 13.5px) }
+.item-sub.s-eur{ font-size:clamp(13px, 3.4vw, 14.5px) }
+.item-price{
+  grid-column:2; grid-row:1;
+  justify-self:end;
+  font-family:var(--geo-sans);
+  font-weight:500;
+  font-size:clamp(14px, 3.6vw, 15px);
+  color:var(--gold-deep);
+  font-variant-numeric:tabular-nums;
+  white-space:nowrap;
+  letter-spacing:.01em;
+}
+.item-price .gel{ color:var(--ink-faint); margin-left:3px; font-weight:400 }
+.item-price.multi{
+  display:flex; flex-direction:column; align-items:flex-end; gap:4px;
+  font-size:13.5px;
+}
+.item-price .tier u{
+  text-decoration:none;
+  font-size:10.5px; letter-spacing:.11em;
+  color:var(--ink-faint); margin-right:8px;
+}
+
+/* ---------------- photographs ---------------- */
+.shots{ padding-block:clamp(8px, 2vw, 20px) clamp(28px, 4vw, 48px) }
+.shots-strip{
+  display:grid;
+  grid-auto-flow:column;
+  grid-auto-columns:68vw;
+  gap:10px;
+  overflow-x:auto;
+  overscroll-behavior-x:contain;
+  scroll-snap-type:x mandatory;
+  scrollbar-width:none; -ms-overflow-style:none;
+  -webkit-overflow-scrolling:touch;
+  padding-inline:var(--gutter);
+}
+.shots-strip::-webkit-scrollbar{ display:none }
+.shot{
+  margin:0;
+  scroll-snap-align:center;
+  aspect-ratio:4 / 5;
+  max-width:100%;
+  background:var(--cream);
+  overflow:hidden;
+}
+.shot img{
+  display:block;
+  width:100%; height:100%;
+  object-fit:cover;
+}
+@media (min-width:780px){
+  .shots-strip{
+    grid-auto-flow:row;
+    grid-template-columns:repeat(3, 1fr);
+    grid-auto-columns:auto;
+    gap:clamp(12px, 1.6vw, 18px);
+    overflow:visible;
+    width:100%;
+    max-width:var(--measure);
+    margin-inline:auto;
+  }
+}
+
+/* ---------------- information ---------------- */
+.band{
+  background:var(--cream);
+  border-top:1px solid var(--rule);
+  margin-top:clamp(26px, 4vw, 48px);
+}
+.info{ display:grid; grid-template-columns:1fr }
+.block{ padding-block:clamp(28px, 5vw, 36px) }
+.block + .block{ border-top:1px solid var(--rule) }
+@media (min-width:860px){
+  .info{ grid-template-columns:repeat(auto-fit, minmax(230px, 1fr)) }
+  .block{
+    padding-block:clamp(44px, 5vw, 60px);
+    padding-inline:clamp(26px, 3.4vw, 46px);
+  }
+  .block + .block{ border-top:0; border-left:1px solid var(--rule) }
+  .block:first-child{ padding-inline-start:0 }
+  .block:last-child{ padding-inline-end:0 }
+}
+.block h3{ font-weight:500; font-size:16.5px; line-height:1.3; color:var(--ink) }
+.block h3.t-eur{ font-size:18px }
+.block .sub{ font-size:13px; color:var(--ink-sub); margin-top:1px }
+.block-body{ margin-top:20px; display:flex; flex-direction:column; gap:16px }
+
+.clock-row{ display:flex; align-items:center; gap:clamp(16px, 3vw, 22px); flex-wrap:wrap }
+.clock{ width:74px; height:74px; flex:0 0 auto }
+.clock circle.face{ fill:none; stroke:var(--gold); stroke-width:1 }
+.clock line.tick{ stroke:var(--gold); stroke-width:1.4; stroke-linecap:round }
+.clock line.hand{ stroke:var(--ink); stroke-linecap:round }
+.clock line.hand.h{ stroke-width:2 }
+.clock line.hand.m{ stroke-width:1.4 }
+.clock line.hand.s{ stroke:var(--sage); stroke-width:.8 }
+.hours{ display:flex; flex-direction:column; gap:6px; min-width:0 }
+.hours .days{ font-size:13px; color:var(--ink-faint) }
+.hours .span{
+  font-family:var(--wordmark);
+  font-size:clamp(20px, 5.2vw, 24px);
+  letter-spacing:.07em;
+  line-height:1.15;
+  color:var(--ink);
+  font-variant-numeric:tabular-nums;
+}
+.hours .note{ font-size:12.5px; color:var(--ink-faint); line-height:1.5 }
+
+.addr{ font-style:normal; display:flex; flex-direction:column; gap:4px }
+.addr .l1{ font-size:16px; line-height:1.5 }
+.addr .l1.t-eur{ font-size:17px }
+.addr .l2{ font-size:14px; color:var(--ink-soft) }
+
+.phone{
+  font-family:var(--wordmark);
+  font-size:clamp(19px, 5vw, 23px);
+  letter-spacing:.05em;
+  color:var(--ink);
+  text-decoration:none;
+  font-variant-numeric:tabular-nums;
+  align-self:flex-start;
+  transition:color .2s ease;
+}
+.phone:hover{ color:var(--gold-deep) }
+
+.links{ display:flex; flex-wrap:wrap; gap:4px 26px }
+.link{
+  display:inline-flex; align-items:center;
+  min-height:44px;
+  font-size:14px;
+  color:var(--ink);
+  text-decoration:underline;
+  text-decoration-color:var(--gold);
+  text-decoration-thickness:1px;
+  text-underline-offset:6px;
+  -webkit-tap-highlight-color:transparent;
+  transition:color .2s ease, text-decoration-color .2s ease;
+}
+.link:hover{ color:var(--gold-deep); text-decoration-color:var(--gold-deep) }
+
+/* ---------------- footer ---------------- */
+.foot{ border-top:1px solid var(--rule); background:var(--paper) }
+.foot-inner{
+  display:flex; flex-direction:column; align-items:center; gap:12px;
+  text-align:center;
+  padding-block:34px calc(34px + env(safe-area-inset-bottom, 0px));
+}
+.foot .sig{
+  font-family:var(--wordmark);
+  font-size:12.5px;
+  letter-spacing:.32em;
+  text-indent:.32em;
+  color:var(--ink-soft);
+}
+.foot .fine{ font-size:12.5px; color:var(--ink-faint); line-height:1.8 }
+
+/* ---------------- back to top ---------------- */
+.totop{
+  position:fixed;
+  right:max(18px, env(safe-area-inset-right, 0px));
+  bottom:max(18px, env(safe-area-inset-bottom, 0px));
+  z-index:40;
+  display:grid; place-items:center;
+  width:46px; height:46px;
+  border:1px solid var(--rule-2);
+  border-radius:50%;
+  background:var(--paper);
+  color:var(--gold-deep);
+  cursor:pointer;
+  opacity:0; transform:translateY(8px);
+  pointer-events:none;
+  -webkit-tap-highlight-color:transparent;
+  transition:opacity .25s ease, transform .25s ease, border-color .2s ease;
+}
+.totop.is-on{ opacity:1; transform:none; pointer-events:auto }
+.totop:hover{ border-color:var(--gold) }
+.totop svg{ width:17px; height:17px }
+
+.noscript{
+  margin:24px auto; max-width:600px;
+  border-top:1px solid var(--rule); border-bottom:1px solid var(--rule);
+  padding:18px 0;
+  font-size:14px; color:var(--ink-soft);
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="langs" id="langs" role="group" aria-label="Language">
+      <button class="lang" type="button" data-lang="ka" lang="ka" aria-pressed="true">ქართული</button>
+      <span class="lang-div" aria-hidden="true"></span>
+      <button class="lang" type="button" data-lang="en" lang="en" aria-pressed="false">English</button>
+      <span class="lang-div" aria-hidden="true"></span>
+      <button class="lang" type="button" data-lang="ru" lang="ru" aria-pressed="false">Русский</button>
+    </div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="logo">
+    <svg class="logo-cup" viewBox="0 0 52 42" fill="none" aria-hidden="true">
+      <path d="M21 13.6c0-2.1 2.2-2.6 2.2-4.7S21 6.4 21 4.3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      <path d="M28.6 13.6c0-2.1 2.2-2.6 2.2-4.7s-2.2-2.6-2.2-4.7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      <path d="M11.5 17.5h25.8v6.6c0 5.9-4.8 10.7-10.7 10.7h-4.4c-5.9 0-10.7-4.8-10.7-10.7v-6.6Z" fill="currentColor"/>
+      <path d="M37.8 20.2h2.4a4.6 4.6 0 0 1 0 9.2h-2.4" stroke="currentColor" stroke-width="2.1"/>
+      <path d="M8.2 38.4h33.6" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>
+    </svg>
+    <div class="logo-caf"><i></i><span>CAFÉ</span><i></i></div>
+    <h1 class="logo-name">TSVETI</h1>
+    <div class="logo-rule" aria-hidden="true"></div>
+    <div class="logo-dot" aria-hidden="true"></div>
+  </div>
+
+  <p class="wordmark-ka" lang="ka">კაფე წვეთი</p>
+
+  <p class="tagline" id="tagline"></p>
+
+  <p class="status" id="status">
+    <span class="dot" aria-hidden="true"></span>
+    <span class="state"></span>
+  </p>
+</header>
+
+<nav class="bar" id="bar" aria-label="Categories">
+  <div class="wrap pills-shell" id="pillsShell">
+    <div class="pills" id="pills" role="group"></div>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap menu">
+    <div id="menu"></div>
+    <noscript>
+      <p class="noscript" lang="ka">მენიუს სანახავად ჩართეთ JavaScript.</p>
+    </noscript>
+  </div>
+
+  <section class="shots" id="shots" hidden aria-label="Photographs">
+    <div class="shots-strip" id="shotsStrip"></div>
+  </section>
+</main>
+
+<section class="band" aria-label="Information">
+  <div class="wrap info">
+
+    <article class="block">
+      <h3 id="hoursTitle"></h3>
+      <p class="sub" id="hoursSub"></p>
+      <div class="block-body">
+        <div class="clock-row">
+          <svg class="clock" viewBox="0 0 100 100" role="img" aria-labelledby="clockLabel">
+            <title id="clockLabel">Clock</title>
+            <circle class="face" cx="50" cy="50" r="44.5"/>
+            <g id="ticks"></g>
+            <line class="hand h" id="handH" x1="50" y1="50" x2="50" y2="30"/>
+            <line class="hand m" id="handM" x1="50" y1="50" x2="50" y2="20"/>
+            <line class="hand s" id="handS" x1="50" y1="53" x2="50" y2="17"/>
+          </svg>
+          <div class="hours">
+            <span class="days" id="daysLabel"></span>
+            <span class="span" id="hoursSpan"></span>
+            <span class="note" id="hoursNote"></span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="block">
+      <h3 id="placeTitle"></h3>
+      <p class="sub" id="placeSub"></p>
+      <div class="block-body">
+        <address class="addr">
+          <span class="l1" id="addr1"></span>
+          <span class="l2" id="addr2"></span>
+        </address>
+        <div class="links">
+          <a class="link" id="mapsLink" href="#" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="block">
+      <h3 id="contactTitle"></h3>
+      <p class="sub" id="contactSub"></p>
+      <div class="block-body">
+        <a class="phone" id="phoneLink" href="#"><span id="phoneText"></span></a>
+        <div class="links">
+          <a class="link" id="igLink" href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a class="link" id="fbLink" href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <p class="sig">CAFÉ TSVETI</p>
+    <p class="fine"><span id="pricesNote"></span><br>© <span id="year">2026</span> <span id="rightsName"></span></p>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" type="button">
+  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M12 19V6M6 11.5 12 5.5l6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+<script>
+(function () {
+  "use strict";
+
+  /* =========================================================
+     1. EDIT THIS BLOCK — contact details, hours, photographs.
+     ========================================================= */
+  var CONFIG = {
+    /* Anything left empty is hidden on the page instead of showing a
+       placeholder, so the site can go live before every line is filled in. */
+    phoneText : "",                                  // e.g. "+995 555 12 34 56"
+    phoneDial : "",                                  // same number, digits only: "+995555123456"
+
+    address : {
+      ka: { street: "", city: "" },                  // e.g. "ფალიაშვილის ქუჩა 12" / "თბილისი 0179"
+      en: { street: "", city: "" },                  // e.g. "12 Paliashvili Street" / "Tbilisi 0179, Georgia"
+      ru: { street: "", city: "" }                   // e.g. "ул. Палиашвили 12" / "Тбилиси 0179, Грузия"
+    },
+    mapsUrl   : "https://www.google.com/maps/search/?api=1&query=Cafe+Tsveti+Tbilisi",
+
+    instagram : "https://www.instagram.com/cafe.tsveti/",
+    facebook  : "",                                  // full page URL, or leave empty
+
+    hours     : { open: "09:00", close: "23:00" },
+    hoursNote : {
+      ka: "სამზარეულო იკეტება 22:30-ზე",
+      en: "Kitchen closes at 22:30",
+      ru: "Кухня закрывается в 22:30"
+    },
+
+    /* Drop photographs into the assets folder using these names and they
+       appear on their own. Any that are missing are skipped silently, and
+       if none load the whole strip stays hidden. Add or remove rows freely. */
+    photos : [
+      { src: "assets/cheesecake.jpg", alt: {
+          ka: "ბასკური ჩიზქეიქი შოკოლადით",
+          en: "Basque cheesecake with chocolate",
+          ru: "Баскский чизкейк с шоколадом" } },
+      { src: "assets/coffee.jpg", alt: {
+          ka: "ცივი ყავა",
+          en: "Iced coffee",
+          ru: "Холодный кофе" } },
+      { src: "assets/interior.jpg", alt: {
+          ka: "კაფეს ინტერიერი",
+          en: "Inside the cafe",
+          ru: "Интерьер кафе" } }
+    ]
+  };
+
+  /* =========================================================
+     2. INTERFACE WORDS
+     ========================================================= */
+  var UI = {
+    ka: {
+      tagline: "ყავა, კოქტეილი, ვაფლი, დესერტი",
+      all: "ყველა",
+      open: function (o, c) { return "ახლა ღიაა, " + o + "-დან " + c + "-მდე"; },
+      shut: function (o) { return "ახლა დაკეტილია, იხსნება " + o + "-ზე"; },
+      hoursTitle: "სამუშაო საათები",
+      everyday: "ყოველდღე",
+      placeTitle: "ლოკაცია",
+      contactTitle: "კონტაქტი",
+      mapsLabel: "რუკაზე ნახვა",
+      pricesNote: "ფასები ლარში",
+      rights: "კაფე წვეთი",
+      toTop: "დასაწყისში დაბრუნება",
+      categories: "კატეგორიები",
+      clock: "მიმდინარე დრო",
+      photos: "ფოტოები"
+    },
+    en: {
+      tagline: "Coffee, cocktails, waffles, desserts",
+      all: "All",
+      open: function (o, c) { return "Open now, " + o + " to " + c; },
+      shut: function (o) { return "Closed now, opens at " + o; },
+      hoursTitle: "Opening hours",
+      everyday: "Every day",
+      placeTitle: "Location",
+      contactTitle: "Contact",
+      mapsLabel: "View on map",
+      pricesNote: "Prices in Georgian lari",
+      rights: "Cafe Tsveti",
+      toTop: "Back to top",
+      categories: "Categories",
+      clock: "Current time",
+      photos: "Photographs"
+    },
+    ru: {
+      tagline: "Кофе, коктейли, вафли, десерты",
+      all: "Всё",
+      open: function (o, c) { return "Сейчас открыто, с " + o + " до " + c; },
+      shut: function (o) { return "Сейчас закрыто, откроется в " + o; },
+      hoursTitle: "Часы работы",
+      everyday: "Ежедневно",
+      placeTitle: "Адрес",
+      contactTitle: "Контакты",
+      mapsLabel: "Посмотреть на карте",
+      pricesNote: "Цены в лари",
+      rights: "Кафе Цвети",
+      toTop: "Наверх",
+      categories: "Категории",
+      clock: "Текущее время",
+      photos: "Фотографии"
+    }
+  };
+
+  /* =========================================================
+     3. THE MENU. Add, remove or reprice items here.
+        price: "7.50"                          single price
+        price: [["X1","4.80"], ["X2","5.80"]]  two sizes
+     ========================================================= */
+  var MENU = [
+    {
+      id: "dessert", ka: "დესერტი", en: "Desserts", ru: "Десерты",
+      items: [
+        { ka: "არაქისის და კარამელის ჩიზქეიქი", en: "Peanut & caramel cheesecake", ru: "Чизкейк с арахисом и карамелью", price: "7.50" },
+        { ka: "შოკოლადის ჩიზქეიქი", en: "Chocolate cheesecake", ru: "Шоколадный чизкейк", price: "7.50" },
+        { ka: "ბასკური ჩიზქეიქი", en: "Basque cheesecake", ru: "Баскский чизкейк", price: "8.50" },
+        { ka: "ტირამისუ", en: "Tiramisu", ru: "Тирамису", price: "9.90" },
+        { ka: "შოკოლადის მაფინი", en: "Chocolate muffin", ru: "Шоколадный маффин", price: "4.50" },
+        { ka: "შოკოლადის ორცხობილა", en: "Chocolate cookie", ru: "Шоколадное печенье", price: "3.00" },
+        { ka: "ტარტი ჟოლოს და შოკოლადის", en: "Raspberry & chocolate tart", ru: "Тарт с малиной и шоколадом", price: "7.30" },
+        { ka: "ჟელეს დესერტი", en: "Jelly dessert", ru: "Желейный десерт", price: "5.80" },
+        { ka: "იდეალი", en: "Ideal cake", ru: "Торт «Идеал»", price: "5.30" },
+        { ka: "ბელგიური ვაფლი „ნაყინით/შოკოლადით“", en: "Belgian waffle, ice cream or chocolate", ru: "Бельгийская вафля с мороженым или шоколадом", price: "8.50" },
+        { ka: "კრეპი „შოკოლადი/ბანანი“", en: "Chocolate & banana crepe", ru: "Блинчик с шоколадом и бананом", price: "7.00" },
+        { ka: "კრუასანი", en: "Croissant", ru: "Круассан", price: "5.50" },
+        { ka: "ფენქეიქი", en: "Pancake", ru: "Панкейк", price: "4.90" },
+        { ka: "კრუასანი შოკოლადით", en: "Chocolate croissant", ru: "Круассан с шоколадом", price: "6.90" },
+        { ka: "მედოკი", en: "Medoki", ru: "Медоки", price: "5.30" },
+        { ka: "მარწყვის ტორტის ნაჭერი", en: "Strawberry cake slice", ru: "Кусочек клубничного торта", price: "5.90" },
+        { ka: "ანიუტა", en: "Anuta cake", ru: "Торт «Анюта»", price: "5.30" },
+        { ka: "ჩიტის რძე", en: "Bird's milk cake", ru: "Торт «Птичье молоко»", price: "5.30" },
+        { ka: "ტარტი მარწყვის", en: "Strawberry tart", ru: "Тарт с клубникой", price: "7.00" },
+        { ka: "ჟოლოს მერინგი", en: "Raspberry meringue", ru: "Малиновая меренга", price: "7.00" }
+      ]
+    },
+    {
+      id: "snacks", ka: "წასახემსებელი", en: "Snacks", ru: "Закуски",
+      items: [
+        { ka: "კრეპი „ყველის და ჟოლოს შიგთავსით“", en: "Cheese & raspberry crepe", ru: "Блинчик с сыром и малиной", price: "11.90" },
+        { ka: "ყველის და ღორის სენდვიჩი", en: "Ham & cheese sandwich", ru: "Сэндвич с ветчиной и сыром", price: "9.90" },
+        { ka: "ჰოთ დოგი", en: "Hot dog", ru: "Хот-дог", price: "6.00" },
+        { ka: "ბოსტნეულის ჭიქა", en: "Veggie cup", ru: "Овощи в стакане", price: "5.70" }
+      ]
+    },
+    {
+      id: "cold", ka: "ცივი სასმელი", en: "Cold drinks", ru: "Холодные напитки",
+      items: [
+        { ka: "ცივი ლატე", en: "Iced latte", ru: "Айс-латте", price: "7.00" },
+        { ka: "ცივი ამერიკანო", en: "Iced americano", ru: "Айс-американо", price: "4.80" },
+        { ka: "ცივი ყავა", en: "Iced coffee", ru: "Холодный кофе", price: "6.50" },
+        { ka: "ცივი ჩაი", en: "Iced tea", ru: "Холодный чай", price: "4.50" },
+        { ka: "ფორთოხლის ფრეში", en: "Fresh orange juice", ru: "Апельсиновый фреш", price: "7.00" }
+      ]
+    },
+    {
+      id: "hot", ka: "ცხელი სასმელი", en: "Hot drinks", ru: "Горячие напитки",
+      items: [
+        { ka: "თურქული ყავა", en: "Turkish coffee", ru: "Кофе по-турецки", price: "3.50" },
+        { ka: "ამერიკანო", en: "Americano", ru: "Американо", price: [["X1","4.80"],["X2","5.80"]] },
+        { ka: "ესპრესო", en: "Espresso", ru: "Эспрессо", price: [["X1","4.40"],["X2","5.30"]] },
+        { ka: "კაპუჩინო", en: "Cappuccino", ru: "Капучино", price: "6.50" },
+        { ka: "ლატე", en: "Latte", ru: "Латте", price: "7.00" },
+        { ka: "ჩაი (პაკეტში)", en: "Tea bag", ru: "Чай в пакетике", price: "4.50" },
+        { ka: "ჩაი დასაყენებელი", en: "Brewed tea", ru: "Чай заварной", price: "6.00" },
+        { ka: "ცხელი შოკოლადი", en: "Hot chocolate", ru: "Горячий шоколад", price: "7.00" },
+        { ka: "კაკაო", en: "Cocoa", ru: "Какао", price: "7.00" }
+      ]
+    },
+    {
+      id: "cocktail", ka: "კოქტეილი", en: "Cocktails", ru: "Коктейли",
+      items: [
+        { ka: "აპეროლ სპრიცი", en: "Aperol spritz", ru: "Апероль шприц", price: "24.00" },
+        { ka: "მოჰიტო", en: "Mojito", ru: "Мохито", price: "22.00" }
+      ]
+    },
+    {
+      id: "terrace", ka: "ტერასა", en: "Terrace", ru: "Терраса",
+      items: [
+        { ka: "ჩილიმი", en: "Hookah", ru: "Кальян", price: "30.00" }
+      ]
+    }
+  ];
+
+  /* =========================================================
+     4. Wiring
+     ========================================================= */
+  var $  = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var isArray = function (v) { return Object.prototype.toString.call(v) === "[object Array]"; };
+
+  function esc(s) {
+    return String(s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  }
+
+  var LANGS = ["ka", "en", "ru"];
+  /* the line under each title: Georgian keeps English beneath it,
+     the other two keep the Georgian original so a guest can point at it */
+  var SECOND = { ka: "en", en: "ka", ru: "ka" };
+  function scriptOf(l) { return l === "ka" ? "geo" : "eur"; }
+
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var LARI = ' <span class="gel">₾</span>';
+  var DASH = " – ";
+
+  function readLang() {
+    try {
+      var v = localStorage.getItem("tsveti-lang");
+      if (LANGS.indexOf(v) !== -1) return v;
+    } catch (e) {}
+    return "ka";
+  }
+  function saveLang(v) { try { localStorage.setItem("tsveti-lang", v); } catch (e) {} }
+
+  var lang = readLang();
+  var cat  = "all";
+
+  /* ---- menu ---- */
+  var menuEl = $("#menu");
+
+  function priceHTML(p) {
+    if (isArray(p)) {
+      return '<div class="item-price multi">' + p.map(function (t) {
+        return '<span class="tier"><u>' + esc(t[0]) + "</u>" + esc(t[1]) + LARI + "</span>";
+      }).join("") + "</div>";
+    }
+    return '<div class="item-price">' + esc(p) + LARI + "</div>";
+  }
+
+  function renderMenu() {
+    var sec = SECOND[lang], ps = scriptOf(lang), ss = scriptOf(sec);
+
+    menuEl.innerHTML = MENU.map(function (c) {
+      var rows = c.items.map(function (it) {
+        return '<article class="item">' +
+                 '<h3 class="item-title t-' + ps + '" lang="' + lang + '">' + esc(it[lang]) + "</h3>" +
+                 priceHTML(it.price) +
+                 '<p class="item-sub s-' + ss + '" lang="' + sec + '">' + esc(it[sec]) + "</p>" +
+               "</article>";
+      }).join("");
+
+      return '<section class="cat" data-cat="' + c.id + '" aria-labelledby="h-' + c.id + '">' +
+               '<header class="cat-head">' +
+                 "<div>" +
+                   '<h2 id="h-' + c.id + '" class="t-' + ps + '" lang="' + lang + '">' + esc(c[lang]) + "</h2>" +
+                   '<p class="sub s-' + ss + '" lang="' + sec + '">' + esc(c[sec]) + "</p>" +
+                 "</div>" +
+                 '<span class="cat-rule" aria-hidden="true"></span>' +
+               "</header>" +
+               '<div class="items" data-cols="' + (c.items.length >= 4 ? "2" : "1") + '">' + rows + "</div>" +
+             "</section>";
+    }).join("");
+
+    applyCategory();
+  }
+
+  function applyCategory() {
+    $$(".cat", menuEl).forEach(function (s) {
+      s.hidden = !(cat === "all" || s.dataset.cat === cat);
+    });
+  }
+
+  /* ---- category pills ---- */
+  var pillsEl = $("#pills");
+
+  function renderPills() {
+    var list = [{ id: "all", label: UI[lang].all }].concat(MENU.map(function (c) {
+      return { id: c.id, label: c[lang] };
+    }));
+    pillsEl.innerHTML = list.map(function (c) {
+      return '<button class="pill" type="button" data-cat="' + c.id + '" aria-pressed="' +
+             (c.id === cat) + '" lang="' + lang + '">' + esc(c.label) + "</button>";
+    }).join("");
+  }
+
+  pillsEl.addEventListener("click", function (e) {
+    var btn = e.target.closest(".pill");
+    if (!btn) return;
+    cat = btn.dataset.cat;
+    $$(".pill", pillsEl).forEach(function (p) {
+      p.setAttribute("aria-pressed", String(p === btn));
+    });
+    applyCategory();
+    if (btn.scrollIntoView) {
+      btn.scrollIntoView({ block: "nearest", inline: "center", behavior: reduceMotion ? "auto" : "smooth" });
+    }
+  });
+
+  /* ---- photographs: shown only once one actually loads ---- */
+  var shotsSec = $("#shots"), strip = $("#shotsStrip"), shotImgs = [];
+
+  function renderShots() {
+    if (!CONFIG.photos || !CONFIG.photos.length) return;
+    CONFIG.photos.forEach(function (p) {
+      var fig = document.createElement("figure");
+      fig.className = "shot";
+      var img = document.createElement("img");
+      img.loading = "lazy";
+      img.decoding = "async";
+      img.alt = "";
+      img._alt = p.alt || {};
+      img.addEventListener("load", function () { shotsSec.hidden = false; });
+      img.addEventListener("error", function () {
+        fig.parentNode && fig.parentNode.removeChild(fig);
+        if (!strip.children.length) shotsSec.hidden = true;
+      });
+      img.src = p.src;
+      fig.appendChild(img);
+      strip.appendChild(fig);
+      shotImgs.push(img);
+    });
+  }
+
+  /* ---- everything that carries words ---- */
+  function applyLang(next) {
+    lang = next;
+    var sec = SECOND[lang], t = UI[lang], ts = UI[sec];
+    var ps = scriptOf(lang), ss = scriptOf(sec);
+
+    document.documentElement.lang = lang;
+    $$(".lang", $("#langs")).forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.dataset.lang === lang));
+    });
+
+    $("#tagline").textContent = t.tagline;
+    $("#bar").setAttribute("aria-label", t.categories);
+    $("#pills").setAttribute("aria-label", t.categories);
+    $("#shots").setAttribute("aria-label", t.photos);
+    $("#toTop").setAttribute("aria-label", t.toTop);
+    $("#clockLabel").textContent = t.clock;
+
+    function pair(titleSel, subSel, key, extraTitleClass) {
+      var a = $(titleSel), b = $(subSel);
+      a.textContent = t[key];
+      a.className = (extraTitleClass ? extraTitleClass + " " : "") + "t-" + ps;
+      a.lang = lang;
+      b.textContent = ts[key];
+      b.className = "sub s-" + ss;
+      b.lang = sec;
+    }
+    pair("#hoursTitle",   "#hoursSub",   "hoursTitle");
+    pair("#placeTitle",   "#placeSub",   "placeTitle");
+    pair("#contactTitle", "#contactSub", "contactTitle");
+
+    $("#daysLabel").textContent = t.everyday;
+    $("#hoursSpan").textContent = CONFIG.hours.open + DASH + CONFIG.hours.close;
+    var note = CONFIG.hoursNote && CONFIG.hoursNote[lang];
+    $("#hoursNote").textContent = note || "";
+    $("#hoursNote").hidden = !note;
+
+    var a = CONFIG.address[lang] || CONFIG.address.ka;
+    var l1 = $("#addr1");
+    l1.textContent = a.street || "";
+    l1.className = "l1 t-" + ps;
+    l1.hidden = !a.street;
+    $("#addr2").textContent = a.city || "";
+    $("#addr2").hidden = !a.city;
+    $(".addr").hidden = !(a.street || a.city);
+    $("#mapsLink").textContent = t.mapsLabel;
+
+    prune();
+
+    $("#pricesNote").textContent = t.pricesNote;
+    $("#rightsName").textContent = t.rights;
+
+    shotImgs.forEach(function (img) { img.alt = (img._alt && img._alt[lang]) || ""; });
+
+    paintStatus();
+    renderPills();
+    renderMenu();
+    updateFades();
+  }
+
+  $("#langs").addEventListener("click", function (e) {
+    var btn = e.target.closest(".lang");
+    if (!btn || btn.dataset.lang === lang) return;
+    saveLang(btn.dataset.lang);
+    applyLang(btn.dataset.lang);
+  });
+
+  /* ---- fixed details; an empty setting hides its row ---- */
+  function link(sel, url) {
+    var el = $(sel);
+    if (url) { el.href = url; el.hidden = false; } else { el.hidden = true; }
+  }
+  $("#phoneText").textContent = CONFIG.phoneText || "";
+  link("#phoneLink", CONFIG.phoneDial ? "tel:" + CONFIG.phoneDial : "");
+  link("#mapsLink", CONFIG.mapsUrl);
+  link("#igLink", CONFIG.instagram);
+  link("#fbLink", CONFIG.facebook);
+  $("#year").textContent = new Date().getFullYear();
+
+  /* an information block with nothing left to say is dropped entirely */
+  function prune() {
+    $$(".block").forEach(function (b) {
+      var body = $(".block-body", b);
+      if (!body) return;
+      var text = (body.innerText !== undefined ? body.innerText : body.textContent) || "";
+      b.hidden = text.trim().length === 0;
+    });
+  }
+
+  /* ---- pill row edge fades ---- */
+  var shell = $("#pillsShell");
+  function updateFades() {
+    var max = pillsEl.scrollWidth - pillsEl.clientWidth;
+    shell.classList.toggle("fade-l", pillsEl.scrollLeft > 4);
+    shell.classList.toggle("fade-r", max > 4 && pillsEl.scrollLeft < max - 4);
+  }
+  pillsEl.addEventListener("scroll", updateFades, { passive: true });
+  window.addEventListener("resize", updateFades, { passive: true });
+
+  /* ---- hairline under the bar once it sticks ---- */
+  var bar = $("#bar");
+  var sentinel = document.createElement("div");
+  sentinel.setAttribute("aria-hidden", "true");
+  sentinel.style.cssText = "position:absolute;height:1px;width:1px;";
+  bar.parentNode.insertBefore(sentinel, bar);
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(function (entries) {
+      bar.classList.toggle("is-stuck", !entries[0].isIntersecting);
+    }, { threshold: 0 }).observe(sentinel);
+  }
+
+  /* ---- clock ---- */
+  var out = "";
+  for (var i = 0; i < 12; i++) {
+    var ang = i * 30 * Math.PI / 180;
+    var r1 = (i % 3 === 0) ? 36 : 39.5;
+    out += '<line class="tick" x1="' + (50 + r1 * Math.sin(ang)).toFixed(2) +
+           '" y1="' + (50 - r1 * Math.cos(ang)).toFixed(2) +
+           '" x2="' + (50 + 41.5 * Math.sin(ang)).toFixed(2) +
+           '" y2="' + (50 - 41.5 * Math.cos(ang)).toFixed(2) + '"/>';
+  }
+  $("#ticks").innerHTML = out;
+
+  var handH = $("#handH"), handM = $("#handM"), handS = $("#handS");
+  function tickClock() {
+    var d = new Date();
+    var s = d.getSeconds();
+    var m = d.getMinutes() + s / 60;
+    var h = (d.getHours() % 12) + m / 60;
+    handH.setAttribute("transform", "rotate(" + (h * 30).toFixed(2) + " 50 50)");
+    handM.setAttribute("transform", "rotate(" + (m * 6).toFixed(2) + " 50 50)");
+    handS.setAttribute("transform", "rotate(" + (s * 6).toFixed(2) + " 50 50)");
+  }
+
+  /* ---- open / closed ---- */
+  function toMinutes(hhmm) {
+    var p = String(hhmm).split(":");
+    return (parseInt(p[0], 10) || 0) * 60 + (parseInt(p[1], 10) || 0);
+  }
+  var statusEl = $("#status");
+  function paintStatus() {
+    var d = new Date();
+    var now = d.getHours() * 60 + d.getMinutes();
+    var o = toMinutes(CONFIG.hours.open), c = toMinutes(CONFIG.hours.close);
+    var isOpen = c > o ? (now >= o && now < c) : (now >= o || now < c);
+    statusEl.classList.toggle("is-shut", !isOpen);
+    $(".state", statusEl).textContent = isOpen
+      ? UI[lang].open(CONFIG.hours.open, CONFIG.hours.close)
+      : UI[lang].shut(CONFIG.hours.open);
+  }
+
+  /* ---- back to top ---- */
+  var toTop = $("#toTop"), ticking = false;
+  toTop.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+  });
+  window.addEventListener("scroll", function () {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () {
+      toTop.classList.toggle("is-on", window.pageYOffset > 520);
+      ticking = false;
+    });
+  }, { passive: true });
+
+  renderShots();
+  applyLang(lang);
+  tickClock();
+  setInterval(tickClock, 1000);
+  setInterval(paintStatus, 30000);
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(updateFades); }
+})();
+</script>
+
+</body>
+</html>

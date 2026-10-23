@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ka">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CAFE TSVETI</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FDFBF7">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Serif+Georgian:wght@400&display=swap">
+<style>
+  :root{ color-scheme:light }
+  *,*::before,*::after{ box-sizing:border-box }
+  html,body{ height:100% }
+  body{
+    margin:0; background:#FDFBF7; color:#3A2E2B;
+    font-family:"Noto Serif Georgian", Georgia, serif;
+    display:flex; align-items:center; justify-content:center;
+    padding:32px 20px; text-align:center;
+    -webkit-font-smoothing:antialiased;
+  }
+  .logo{ display:inline-flex; flex-direction:column; align-items:stretch; width:max-content; max-width:100% }
+  .cup{ height:clamp(28px,7vw,36px); width:auto; align-self:center }
+  .caf{ display:flex; align-items:center; gap:13px; margin-top:14px }
+  .caf i{ flex:1 1 auto; height:1px; background:rgba(58,46,43,.5) }
+  .caf span{ font-family:Marcellus,serif; font-size:clamp(11px,3vw,14px); letter-spacing:.3em; text-indent:.3em; line-height:1 }
+  .name{ font-family:Marcellus,serif; font-size:clamp(30px,11vw,48px); letter-spacing:.18em; text-indent:.18em; line-height:1.12; margin:6px 0 0; white-space:nowrap }
+  .rule{ height:1px; background:rgba(58,46,43,.5); margin-top:10px }
+  .msg{ margin-top:34px; font-size:16px; line-height:1.9; color:#6F6058 }
+  .msg span{ display:block }
+  .msg .en,.msg .ru{ font-family:"EB Garamond", Georgia, serif; font-style:italic; color:#7E6E65; font-size:15px }
+  .back{
+    display:inline-flex; align-items:center; min-height:44px; margin-top:26px;
+    font-family:"Noto Serif Georgian", Georgia, serif; font-size:15px; color:#3A2E2B;
+    text-decoration:underline; text-decoration-color:#C5A880;
+    text-decoration-thickness:1px; text-underline-offset:6px;
+  }
+  .back:hover{ color:#8E7044; text-decoration-color:#8E7044 }
+  :focus-visible{ outline:1.5px solid #8E7044; outline-offset:4px }
+</style>
+</head>
+<body>
+  <main>
+    <div class="logo">
+      <svg class="cup" viewBox="0 0 52 42" fill="none" aria-hidden="true">
+        <path d="M21 13.6c0-2.1 2.2-2.6 2.2-4.7S21 6.4 21 4.3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+        <path d="M28.6 13.6c0-2.1 2.2-2.6 2.2-4.7s-2.2-2.6-2.2-4.7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+        <path d="M11.5 17.5h25.8v6.6c0 5.9-4.8 10.7-10.7 10.7h-4.4c-5.9 0-10.7-4.8-10.7-10.7v-6.6Z" fill="currentColor"/>
+        <path d="M37.8 20.2h2.4a4.6 4.6 0 0 1 0 9.2h-2.4" stroke="currentColor" stroke-width="2.1"/>
+        <path d="M8.2 38.4h33.6" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>
+      </svg>
+      <div class="caf"><i></i><span>CAFÉ</span><i></i></div>
+      <div class="name">TSVETI</div>
+      <div class="rule"></div>
+    </div>
+    <p class="msg">
+      <span lang="ka">ასეთი გვერდი არ არსებობს.</span>
+      <span class="en" lang="en">This page does not exist.</span>
+      <span class="ru" lang="ru">Такой страницы нет.</span>
+    </p>
+    <a class="back" href="/" lang="ka">მენიუზე დაბრუნება</a>
+  </main>
+</body>
+</html>
