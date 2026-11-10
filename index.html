@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>CAFE TSVETI</title>
-<meta name="description" content="კაფე წვეთის მენიუ — დესერტი, ყავა, ცივი სასმელი, კოქტეილი და ტერასა. ყოველდღე 09:00 – 23:00.">
+<meta name="description" content="კაფე წვეთის მენიუ — დესერტი, ყავა, ცივი სასმელი, კოქტეილი და ტერასა. ყოველდღე 10:00 – 22:00.">
 <meta name="theme-color" content="#FDFBF7">
 <meta property="og:type" content="website">
 <meta property="og:title" content="CAFÉ TSVETI · კაფე წვეთი">
-<meta property="og:description" content="მენიუ ქართულად, ინგლისურად და რუსულად. ყოველდღე 09:00 – 23:00.">
+<meta property="og:description" content="მენიუ ქართულად, ინგლისურად და რუსულად. ყოველდღე 10:00 – 22:00.">
 <!-- The default Cloudflare Pages domain. If you attach a custom domain,
      find and replace https://cafe-tsveti.pages.dev with it in this head. -->
 <link rel="canonical" href="https://cafe-tsveti.pages.dev/">
@@ -39,14 +39,14 @@
   "image": "https://cafe-tsveti.pages.dev/og-image.png",
   "hasMenu": "https://cafe-tsveti.pages.dev/",
   "servesCuisine": ["Coffee", "Desserts"],
-  "priceRange": "3.00-30.00 GEL",
+  "priceRange": "3.70-35.00 GEL",
   "currenciesAccepted": "GEL",
   "sameAs": ["https://www.instagram.com/cafe.tsveti/"],
   "openingHoursSpecification": [{
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-    "opens": "09:00",
-    "closes": "23:00"
+    "opens": "10:00",
+    "closes": "22:00"
   }]
 }
 </script>
@@ -719,11 +719,11 @@ a{ color:inherit }
     instagram : "https://www.instagram.com/cafe.tsveti/",
     facebook  : "",                                  // full page URL, or leave empty
 
-    hours     : { open: "09:00", close: "23:00" },
+    hours     : { open: "10:00", close: "22:00" },
     hoursNote : {
-      ka: "სამზარეულო იკეტება 22:30-ზე",
-      en: "Kitchen closes at 22:30",
-      ru: "Кухня закрывается в 22:30"
+      ka: "",                                        // e.g. "სამზარეულო იკეტება 21:30-ზე"
+      en: "",                                        // e.g. "Kitchen closes at 21:30"
+      ru: ""                                         // e.g. "Кухня закрывается в 21:30"
     },
 
     /* Drop photographs into the assets folder using these names and they
@@ -811,72 +811,74 @@ a{ color:inherit }
     {
       id: "dessert", ka: "დესერტი", en: "Desserts", ru: "Десерты",
       items: [
-        { ka: "არაქისის და კარამელის ჩიზქეიქი", en: "Peanut & caramel cheesecake", ru: "Чизкейк с арахисом и карамелью", price: "7.50" },
-        { ka: "შოკოლადის ჩიზქეიქი", en: "Chocolate cheesecake", ru: "Шоколадный чизкейк", price: "7.50" },
-        { ka: "ბასკური ჩიზქეიქი", en: "Basque cheesecake", ru: "Баскский чизкейк", price: "8.50" },
-        { ka: "ტირამისუ", en: "Tiramisu", ru: "Тирамису", price: "9.90" },
-        { ka: "შოკოლადის მაფინი", en: "Chocolate muffin", ru: "Шоколадный маффин", price: "4.50" },
-        { ka: "შოკოლადის ორცხობილა", en: "Chocolate cookie", ru: "Шоколадное печенье", price: "3.00" },
-        { ka: "ტარტი ჟოლოს და შოკოლადის", en: "Raspberry & chocolate tart", ru: "Тарт с малиной и шоколадом", price: "7.30" },
-        { ka: "ჟელეს დესერტი", en: "Jelly dessert", ru: "Желейный десерт", price: "5.80" },
-        { ka: "იდეალი", en: "Ideal cake", ru: "Торт «Идеал»", price: "5.30" },
-        { ka: "ბელგიური ვაფლი „ნაყინით/შოკოლადით“", en: "Belgian waffle, ice cream or chocolate", ru: "Бельгийская вафля с мороженым или шоколадом", price: "8.50" },
-        { ka: "კრეპი „შოკოლადი/ბანანი“", en: "Chocolate & banana crepe", ru: "Блинчик с шоколадом и бананом", price: "7.00" },
-        { ka: "კრუასანი", en: "Croissant", ru: "Круассан", price: "5.50" },
-        { ka: "ფენქეიქი", en: "Pancake", ru: "Панкейк", price: "4.90" },
-        { ka: "კრუასანი შოკოლადით", en: "Chocolate croissant", ru: "Круассан с шоколадом", price: "6.90" },
-        { ka: "მედოკი", en: "Medoki", ru: "Медоки", price: "5.30" },
-        { ka: "მარწყვის ტორტის ნაჭერი", en: "Strawberry cake slice", ru: "Кусочек клубничного торта", price: "5.90" },
-        { ka: "ანიუტა", en: "Anuta cake", ru: "Торт «Анюта»", price: "5.30" },
-        { ka: "ჩიტის რძე", en: "Bird's milk cake", ru: "Торт «Птичье молоко»", price: "5.30" },
-        { ka: "ტარტი მარწყვის", en: "Strawberry tart", ru: "Тарт с клубникой", price: "7.00" },
-        { ka: "ჟოლოს მერინგი", en: "Raspberry meringue", ru: "Малиновая меренга", price: "7.00" }
+        { ka: "ჩიზქეიქი „ბასკური / ამერიკული / მოცვის“", en: "Cheesecake, Basque, American or blueberry", ru: "Чизкейк баскский, американский или черничный", price: "10.00" },
+        { ka: "ბელგიური ვაფლი", en: "Belgian waffle", ru: "Бельгийская вафля", price: "9.60" },
+        { ka: "ფენქეიქი", en: "Pancake", ru: "Панкейк", price: "9.60" },
+        { ka: "ჭიქის ნამცხვარი", en: "Cake in a cup", ru: "Пирожное в стаканчике", price: "8.50" },
+        { ka: "ანიუტა", en: "Anuta cake", ru: "Торт «Анюта»", price: "6.00" },
+        { ka: "კენკრის ტორტის ნაჭერი", en: "Berry cake slice", ru: "Кусочек ягодного торта", price: "7.00" },
+        { ka: "კრეპი შოკოლადით და ბანანით", en: "Chocolate & banana crepe", ru: "Блинчик с шоколадом и бананом", price: "8.00" },
+        { ka: "იდეალი", en: "Ideal cake", ru: "Торт «Идеал»", price: "6.00" },
+        { ka: "ჟელეს დესერტი", en: "Jelly dessert", ru: "Желейный десерт", price: "7.00" },
+        { ka: "ტარტი", en: "Tart", ru: "Тарт", price: "7.70" },
+        { ka: "მედოკი", en: "Medoki", ru: "Медоки", price: "6.00" },
+        { ka: "კრუასანი", en: "Croissant", ru: "Круассан", price: "5.70" },
+        { ka: "კრუასანი „შოკოლადით“", en: "Chocolate croissant", ru: "Круассан с шоколадом", price: "7.80" }
       ]
     },
     {
       id: "snacks", ka: "წასახემსებელი", en: "Snacks", ru: "Закуски",
       items: [
-        { ka: "კრეპი „ყველის და ჟოლოს შიგთავსით“", en: "Cheese & raspberry crepe", ru: "Блинчик с сыром и малиной", price: "11.90" },
-        { ka: "ყველის და ღორის სენდვიჩი", en: "Ham & cheese sandwich", ru: "Сэндвич с ветчиной и сыром", price: "9.90" },
-        { ka: "ჰოთ დოგი", en: "Hot dog", ru: "Хот-дог", price: "6.00" },
-        { ka: "ბოსტნეულის ჭიქა", en: "Veggie cup", ru: "Овощи в стакане", price: "5.70" }
+        { ka: "ჰოთ დოგი", en: "Hot dog", ru: "Хот-дог", price: "6.60" }
       ]
     },
     {
-      id: "cold", ka: "ცივი სასმელი", en: "Cold drinks", ru: "Холодные напитки",
+      id: "combo", ka: "კომბო მენიუ", en: "Combo menu", ru: "Комбо-меню",
       items: [
-        { ka: "ცივი ლატე", en: "Iced latte", ru: "Айс-латте", price: "7.00" },
-        { ka: "ცივი ამერიკანო", en: "Iced americano", ru: "Айс-американо", price: "4.80" },
-        { ka: "ცივი ყავა", en: "Iced coffee", ru: "Холодный кофе", price: "6.50" },
-        { ka: "ცივი ჩაი", en: "Iced tea", ru: "Холодный чай", price: "4.50" },
-        { ka: "ფორთოხლის ფრეში", en: "Fresh orange juice", ru: "Апельсиновый фреш", price: "7.00" }
+        { ka: "ბელგიური ვაფლი + ჩაი დასაყენებელი", en: "Belgian waffle + brewed tea", ru: "Бельгийская вафля + заварной чай", price: "15.40" },
+        { ka: "ჩიზქეიქი + თურქული ყავა", en: "Cheesecake + Turkish coffee", ru: "Чизкейк + кофе по-турецки", price: "12.00" },
+        { ka: "კაპუჩინო + კრუასანი", en: "Cappuccino + croissant", ru: "Капучино + круассан", price: "13.00" },
+        { ka: "ცხელი შოკოლადი + კრუასანი", en: "Hot chocolate + croissant", ru: "Горячий шоколад + круассан", price: "13.00" }
       ]
     },
     {
       id: "hot", ka: "ცხელი სასმელი", en: "Hot drinks", ru: "Горячие напитки",
       items: [
-        { ka: "თურქული ყავა", en: "Turkish coffee", ru: "Кофе по-турецки", price: "3.50" },
-        { ka: "ამერიკანო", en: "Americano", ru: "Американо", price: [["X1","4.80"],["X2","5.80"]] },
-        { ka: "ესპრესო", en: "Espresso", ru: "Эспрессо", price: [["X1","4.40"],["X2","5.30"]] },
-        { ka: "კაპუჩინო", en: "Cappuccino", ru: "Капучино", price: "6.50" },
-        { ka: "ლატე", en: "Latte", ru: "Латте", price: "7.00" },
-        { ka: "ჩაი (პაკეტში)", en: "Tea bag", ru: "Чай в пакетике", price: "4.50" },
-        { ka: "ჩაი დასაყენებელი", en: "Brewed tea", ru: "Чай заварной", price: "6.00" },
-        { ka: "ცხელი შოკოლადი", en: "Hot chocolate", ru: "Горячий шоколад", price: "7.00" },
-        { ka: "კაკაო", en: "Cocoa", ru: "Какао", price: "7.00" }
+        { ka: "ამერიკანო", en: "Americano", ru: "Американо", price: [["X1","4.90"],["X2","5.90"]] },
+        { ka: "ესპრესო", en: "Espresso", ru: "Эспрессо", price: [["X1","4.50"],["X2","5.40"]] },
+        { ka: "თურქული ყავა", en: "Turkish coffee", ru: "Кофе по-турецки", price: "3.70" },
+        { ka: "ჩაი პაკეტში", en: "Tea bag", ru: "Чай в пакетике", price: "4.50" },
+        { ka: "ჩაი დასაყენებელი", en: "Brewed tea", ru: "Чай заварной", price: "7.00" },
+        { ka: "ცხელი შოკოლადი", en: "Hot chocolate", ru: "Горячий шоколад", price: "8.00" },
+        { ka: "კაკაო", en: "Cocoa", ru: "Какао", price: "7.60" },
+        { ka: "კაპუჩინო", en: "Cappuccino", ru: "Капучино", price: "7.90" },
+        { ka: "ლატე", en: "Latte", ru: "Латте", price: "8.10" }
+      ]
+    },
+    {
+      id: "cold", ka: "ცივი სასმელი", en: "Cold drinks", ru: "Холодные напитки",
+      items: [
+        { ka: "ცივი ლატე", en: "Iced latte", ru: "Айс-латте", price: "8.10" },
+        { ka: "ცივი ამერიკანო", en: "Iced americano", ru: "Айс-американо", price: "5.90" },
+        { ka: "ცივი ყავა", en: "Iced coffee", ru: "Холодный кофе", price: "8.30" },
+        { ka: "ცივი ჩაი „მარწყვი და ასკილი“", en: "Iced tea, strawberry & rosehip", ru: "Холодный чай «Клубника и шиповник»", price: "5.90" },
+        { ka: "ცივი ჩაი „მანგო და მარაკუია“", en: "Iced tea, mango & passion fruit", ru: "Холодный чай «Манго и маракуйя»", price: "5.90" },
+        { ka: "ფორთოხლის ფრეში", en: "Fresh orange juice", ru: "Апельсиновый фреш", price: "5.80" }
       ]
     },
     {
       id: "cocktail", ka: "კოქტეილი", en: "Cocktails", ru: "Коктейли",
       items: [
-        { ka: "აპეროლ სპრიცი", en: "Aperol spritz", ru: "Апероль шприц", price: "24.00" },
-        { ka: "მოჰიტო", en: "Mojito", ru: "Мохито", price: "22.00" }
+        { ka: "მოჰიტო", en: "Mojito", ru: "Мохито", price: "22.00" },
+        { ka: "აპეროლ სპრიცი", en: "Aperol spritz", ru: "Апероль шприц", price: "25.00" }
       ]
     },
     {
       id: "terrace", ka: "ტერასა", en: "Terrace", ru: "Терраса",
       items: [
-        { ka: "ჩილიმი", en: "Hookah", ru: "Кальян", price: "30.00" }
+        { ka: "ჩილიმი „გამ მინთი“", en: "Hookah, Gum Mint", ru: "Кальян «Гам минт»", price: "35.00" },
+        { ka: "ჩილიმი „კენკრა ყინულით“", en: "Hookah, iced berries", ru: "Кальян «Ягоды со льдом»", price: "35.00" },
+        { ka: "ჩილიმი „დომინიკო“", en: "Hookah, Dominiko", ru: "Кальян «Доминико»", price: "35.00" }
       ]
     }
   ];

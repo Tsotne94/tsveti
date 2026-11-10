@@ -62,7 +62,7 @@ so the site is honest from the first deploy. These are all in the block marked
 | Setting     | Status                                                |
 |-------------|-------------------------------------------------------|
 | `instagram` | done, `cafe.tsveti`                                   |
-| `hours`     | done, 09:00 to 23:00 daily                            |
+| `hours`     | done, 10:00 to 22:00 daily                            |
 | `mapsUrl`   | a Google Maps search for the cafe, replace with the real pin |
 | `phoneText` / `phoneDial` | empty, the phone line is hidden         |
 | `address`   | empty in all three languages, the address is hidden   |
